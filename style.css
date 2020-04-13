@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+body.hideScroll{
+    overflow: hidden;
+}
+
 a{
     color: #ff5e84;
     font-weight: bold;
@@ -112,19 +116,23 @@ footer a{
 
 #modal{
     background: #ff5e84;
-    position: fixed;
+    position: absolute;
     top: 0;
-    width: 100vw;
-    height: 100vh; 
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#modal.addScroll{
+    overflow: auto;
 }
 
 
 
 #modal .content{
-    margin-top: 0px;
+    margin-top: 5%;
     color: white;
 }
 
@@ -136,7 +144,7 @@ footer a{
 #modal form{
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -231,6 +239,10 @@ form button:hover{
     margin-right: 16px;
 }
 
+#page-ideas nav li a {
+    color: #25282B;
+}
+
 #page-ideas nav li:last-child{
     margin: 0;
     width: 150px;
@@ -255,3 +267,33 @@ form button:hover{
 
 }
 
+section#title {
+    text-align: center;
+    margin-top: 64px;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideas .idea{
+    margin: 0;
+}
+
+section#title,
+section#ideas,
+footer {
+    margin-top: 64px;
+}
