@@ -22,6 +22,27 @@ p, .description{
     letter-spacing: 0.1px;
 }
 
+a.button{
+    background: #ff5e84;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-ideas nav li:last-child a:hover {
+    background-color: #0984e3;
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+
+
 #container{
     width: 90%;
     max-width: 980px;
@@ -31,7 +52,7 @@ p, .description{
 
 #intro {
     width: 300px;
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 #buttons {
@@ -57,19 +78,12 @@ button{
     letter-spacing: 0.2px; 
 }
 
-button:hover, form a:hover{
+button:hover, form a:hover, .button:hover{
     transform: scale(1.1);
     transition-duration: 400ms;
 }
 
-button.fat{
-    background: #ff5e84;
-    color: white;
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
-}
+
 
 footer{
     text-align: center;
@@ -92,6 +106,7 @@ footer a{
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+    margin-right: 5px;
 }
 
 .idea img{
@@ -116,7 +131,7 @@ footer a{
 
 #modal{
     background: #ff5e84;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -243,29 +258,17 @@ form button:hover{
     color: #25282B;
 }
 
+#page-ideas nav li a.button {
+    
+    color: white;
+}
+
 #page-ideas nav li:last-child{
     margin: 0;
-    width: 150px;
-    height: 40px;
-    background-color: #ff5e84;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+    
 }
 
-#page-ideas nav li:last-child:hover {
-    background-color: #0984e3;
-    transform: scale(1.1);
-    transition-duration: 400ms;
-}
 
-#page-ideas nav li:last-child a{
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-
-}
 
 section#title {
     text-align: center;
