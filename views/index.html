@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+    <header>
+        <img src="./_img/logo.png" alt="imagem da logo">
+    </header>
+   <main>
+        <p> 
+            Ficar em casa em períodos longos, não é nada fácil.
+        </p>
+        
+        <p> 
+            Por isso, iremos catalogar <strong>idéias, brincadeiras, jogos, filmes,
+            livros, cursos, dicas </strong> e tudo que for necessário para tornar
+            esse momento mais interessante.
+        </p> 
+
+        <p> 
+            Comece clicando em ver idéias para ver as
+            idéias cadastradas e contribua adicionando a sua idéia. 
+        </p>
+
+   </main>
+
+   <section id="buttons">
+    <button onclick="onOff()" >+ Adicionar idéias</button>
+    <a href="/ideias" class="button">Ver idéias</a>
+   </section>
+    
+  <footer>
+    Por 😆 <a href="https://github.com/risingus" target="_blank">Gustavo Lima</a>
+  </footer>
+
+</section>
+
+<section id="last-ideas">
+
+    {% include "all_ideas.html" %}
+
+</section>
+
+{% endblock %}

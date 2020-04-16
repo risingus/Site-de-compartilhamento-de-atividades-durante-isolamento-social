@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "page-ideas" %}
+
+{% block title %}
+    <title>Idéias - Casa Criativa</title> 
+{% endblock title %}
+
+
+
+
+{% block content %}
+
+
+    <div id="container">
+        <header>
+            
+            <img src="./_img/logo.png" alt="Imagem da logo">
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a href="#" class="button" onclick="onOff()">Novas Idéias</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Idéias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+                {% include "all_ideas.html" %}
+            </section>
+        </main>
+    
+        <footer>
+            Por 😆 <a href="https://github.com/risingus" target="_blank">Gustavo Lima</a>
+        </footer>
+        {% endblock %}
